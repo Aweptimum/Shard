@@ -1,0 +1,6 @@
+[submodule "lib/helium"]
+	path = lib/helium
+	url = https://github.com/qeffects/helium
+[submodule "lib/DeWallua"]
+	path = lib/DeWallua
+	url = https://github.com/Aweptimum/DeWallua
