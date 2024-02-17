@@ -4,7 +4,11 @@ local layoutScheme = require 'lib.helium.layout.column'
 
 local checkboxCreator = require 'components.checkbox'
 
-local radioCreator = helium(function (props, view)
+local radioCreator = helium(
+---@param props {options: string[], onClick: fun()}
+---@param view any
+---@return function
+function (props, view)
     local radioState = props
     local checkboxes = {}
     for _, option in ipairs(radioState.options) do
